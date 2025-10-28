@@ -178,7 +178,7 @@ app.delete('/api/games/:id', auth('admin'), async (req, res) => {
 
 const Review = require("./models/Review");
 
-// ---------------- REVIEWS ----------------
+//  Reviews
 
 // Get all reviews (public)
 app.get("/api/reviews", async (req, res) => {
@@ -186,7 +186,7 @@ app.get("/api/reviews", async (req, res) => {
     const reviews = await Review.find().populate("game", "title genre releaseYear"); 
     res.json(reviews);
   } catch (err) {
-    console.error("❌ Error fetching reviews:", err);
+    console.error(" Error fetching reviews:", err);
     res.status(500).json({ message: "Error fetching reviews" });
   }
 });
