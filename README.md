@@ -1,3 +1,6 @@
+Overview:
+Project 2 is a full-stack web application built with the MERN stack. It allows users to rate and review video games. 
+
 Project 2 Setup
 Prerequisites
 
